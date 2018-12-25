@@ -23,6 +23,7 @@
 		<!-- 扫描mybatis配置文件 -->
 		<property name="configLocation" value="classpath:mybatisContext.xml"></property>
 		<property name="mapperLocations" value="classpath:com/newlife/fitness/rearend/dao/mapper/*.xml"></property>
+        <property name="typeAliasesPackage" value="com.newlife.fitness.entity"/>
 	</bean>
 	
 	<!-- 4、使用MapperScannerrConfigurer 将mapper实现类加入ioc-->

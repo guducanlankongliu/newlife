@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 	<!-- 1.扫描带有Controller注解的类 -->
-	<context:component-scan base-package="com.newlife.fitness.frontend.web"/>
+	<context:component-scan base-package="com.newlife.fitness.rearend.web"/>
 	
 	<!-- 2.配置视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -29,6 +29,5 @@
 		<!-- 设置字符编码 -->
 		<property name="defaultEncoding" value="UTF-8"/>
 	</bean>
-	
 
 </beans>
