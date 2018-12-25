@@ -22,7 +22,7 @@
 		<property name="dataSource" ref="dataSource"/>
 		<!-- 扫描mybatis配置文件 -->
 		<property name="configLocation" value="classpath:mybatisContext.xml"></property>
-		<property name="mapperLocations" value="classpath:com/newlife/fitness/rearend/dao/mapper/*.xml"></property>
+		<property name="mapperLocations" value="classpath:com/newlife/fitness/frontend/dao/mapper/*.xml"></property>
         <property name="typeAliasesPackage" value="com.newlife.fitness.entity"/>
 	</bean>
 	
@@ -30,6 +30,6 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
 		<!-- 扫描dao层 -->
-		<property name="basePackage" value="com.newlife.fitness.rearend.dao"/>
+		<property name="basePackage" value="com.newlife.fitness.frontend.dao"/>
 	</bean>
 </beans>
