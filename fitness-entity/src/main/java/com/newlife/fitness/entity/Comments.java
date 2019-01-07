@@ -28,7 +28,14 @@ public class Comments implements Serializable {
 	private FUser FUser;
 
 	private Forum forum;
+	
+	
+	
+	
+	
+	
 
+	
 	public Comments() {
 	}
 

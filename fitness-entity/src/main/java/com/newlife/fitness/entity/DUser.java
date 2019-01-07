@@ -19,6 +19,30 @@ public class DUser implements Serializable {
 
 	private String d_passWord;
 
+	public String getdEmail() {
+		return dEmail;
+	}
+
+	public void setdEmail(String dEmail) {
+		this.dEmail = dEmail;
+	}
+
+	public String getdPhone() {
+		return dPhone;
+	}
+
+	public void setdPhone(String dPhone) {
+		this.dPhone = dPhone;
+	}
+
+	public String getdSex() {
+		return dSex;
+	}
+
+	public void setdSex(String dSex) {
+		this.dSex = dSex;
+	}
+
 	private String dPhone;
 
 	private String dSex;

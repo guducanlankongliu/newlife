@@ -2,12 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.newlife.fitness.frontend.dao.CourseVideoDAO">
 
-  <!-- 基本的resultMap -->
-  <resultMap id="BaseResultMap" type="CourseVideo">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="title" jdbcType="VARCHAR" property="title" />
-    <result column="video_url" jdbcType="VARCHAR" property="videoUrl" />
-    <result column="course_id" jdbcType="INTEGER" property="courseId" />
-  </resultMap>
+
   
 </mapper>

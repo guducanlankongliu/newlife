@@ -2,22 +2,124 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.newlife.fitness.frontend.dao.FUserDAO">
 
-  <!-- 基本的Map映射  前端用户表 -->
-  <resultMap id="BaseResultMap" type="FUser">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="f_userName" jdbcType="VARCHAR" property="fUsername" />
-    <result column="f_loginName" jdbcType="VARCHAR" property="fLoginname" />
-    <result column="f_password" jdbcType="VARCHAR" property="fPassword" />
-    <result column="f_sex" jdbcType="CHAR" property="fSex" />
-    <result column="f_age" jdbcType="INTEGER" property="fAge" />
-    <result column="f_address" jdbcType="VARCHAR" property="fAddress" />
-    <result column="f_email" jdbcType="VARCHAR" property="fEmail" />
-    <result column="f_phone" jdbcType="CHAR" property="fPhone" />
-    <result column="f_isVip" jdbcType="CHAR" property="fIsvip" />
-    <result column="f_imgUrl" jdbcType="VARCHAR" property="fImgurl" />
-    <result column="f_vipBegiTtime" jdbcType="TIMESTAMP" property="fVipbegittime" />
-    <result column="f_vipEndTime" jdbcType="TIMESTAMP" property="fVipendtime" />
-  </resultMap>
+
+
+  
+  <select id="select" resultType="com.newlife.fitness.entity.FUser" parameterType="String">
   
   
+  
+    SELECT   *  FROM f_user    WHERE 
+    
+    
+    f_phone=#{phone}  AND  f_password=#{pwd} ;
+  
+  
+  
+  
+  </select>
+  
+  <select id="FUser" resultType="int" parameterType="String">
+  
+   SELECT  count(*) FROM f_user    WHERE f_phone=#{phone};
+  
+  </select>
+  
+  <insert id="insert" parameterType="String">
+  
+        INSERT INTO f_user   (f_password,f_phone,f_loginName)  VALUES(#{pwd},#{phone},#{f_loginName});
+  
+  
+  </insert>
+  
+  
+  
+  <select id="showperson" resultType="com.newlife.fitness.entity.FUser" parameterType="String">
+  
+  
+  
+    SELECT   *  FROM f_user    WHERE 
+    
+    
+    f_loginName=#{loginname};
+  
+  
+  
+  
+  </select>
+  <update id="insertSelective" parameterType="com.newlife.fitness.entity.FUser">
+  
+  update f_user  
+  
+  <set>
+  <if test="f_userName !=null">
+       f_username=#{f_userName},
+  </if>
+  <if test="f_loginName !=null">
+     f_loginName=  #{f_loginName},
+  </if>
+  
+    <if test="f_email !=null">
+            f_email=  #{f_email},
+  </if>
+    <if test="f_sex !=null">
+  f_sex=#{f_sex},
+  </if>
+    <if test="f_phone != null">
+     f_phone=#{f_phone},
+  </if>
+  
+    <if test="f_address !=null">
+      f_address=#{f_address},
+  </if>
+  
+    <if test="f_imgUrl !=null">
+      f_imgUrl= #{f_imgUrl},
+  </if>
+  
+  </set>
+  where  id=#{id};
+  
+  
+  </update>
+  
+  
+   <update id="updatevip" parameterType="com.newlife.fitness.entity.FUser">
+  
+  update f_user  
+  
+  <set>
+  <if test="f_isVip !=null">
+       f_isVip=#{f_isVip},
+  </if>
+  <if test="f_vipBegiTtime !=null">
+     f_vipBegiTtime=  #{f_vipBegiTtime},
+  </if>
+  
+    <if test="f_vipEndTime !=null">
+            f_vipEndTime=  #{f_vipEndTime},
+  </if>
+
+  </set>
+  where  f_loginName=#{f_loginName};
+  
+  
+  </update>
+  
+  
+  
+  <select id="login" parameterType="int" resultType="String">
+  
+ select  f_loginName from f_user  <where>
+ 
+ <if test="id >0">
+  and id=#{id}
+ </if>
+ 
+ <if test="name!=null">
+ and  f_loginName= #{name}
+ </if>
+ </where>
+  
+  </select>
 </mapper>

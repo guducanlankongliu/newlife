@@ -3,11 +3,11 @@
 <mapper namespace="com.newlife.fitness.frontend.dao.UserCourseDAO">
 
   <!-- 基本的resultMap -->
-  <resultMap id="BaseResultMap" type="UserCourse">
+ <!--  <resultMap id="BaseResultMap" type="UserCourse">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="course_id" jdbcType="INTEGER" property="courseId" />
-  </resultMap>
+  </resultMap> -->
   
  
 </mapper>

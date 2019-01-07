@@ -106,41 +106,41 @@
             <!--公共依赖结束 -->
 
             <!-- junit -->
-            <dependency>
+            <!-- <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
-            </dependency>
+            </dependency> -->
 
             <!-- 时间日期 -->
-            <dependency>
+          <!--   <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.version}</version>
-            </dependency>
+            </dependency> -->
 
             <!-- httpclient -->
-            <dependency>
+        <!--     <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
-            </dependency>
+            </dependency> -->
 
 
             <!-- 其他功能性组件 -->
             <!-- poi：文档操作 -->
-            <dependency>
+           <!--  <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
                 <version>${poi.version}</version>
-            </dependency>
+            </dependency> -->
             <!-- quartz：石英调度 -->
-            <dependency>
+         <!--    <dependency>
                 <groupId>org.quartz-scheduler</groupId>
                 <artifactId>quartz</artifactId>
                 <version>${quartz.version}</version>
-            </dependency>
+            </dependency> -->
 
 
             <!-- 数据库模块 -->

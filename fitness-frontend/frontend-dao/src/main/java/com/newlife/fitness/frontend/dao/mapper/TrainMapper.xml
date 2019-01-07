@@ -3,7 +3,7 @@
 <mapper namespace="com.newlife.fitness.frontend.dao.TrainDAO">
 
   <!-- 基本的resultMap -->
-  <resultMap id="BaseResultMap" type="Train">
+ <!--  <resultMap id="BaseResultMap" type="Train">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="t_userName" jdbcType="VARCHAR" property="tUsername" />
     <result column="t_loginName" jdbcType="VARCHAR" property="tLoginname" />
@@ -15,7 +15,7 @@
     <result column="t_phone" jdbcType="CHAR" property="tPhone" />
     <result column="t_isVip" jdbcType="CHAR" property="tIsvip" />
     <result column="t_imgUrl" jdbcType="VARCHAR" property="tImgurl" />
-  </resultMap>
+  </resultMap> -->
   
   
 </mapper>

@@ -3,11 +3,8 @@
 <mapper namespace="com.newlife.fitness.frontend.dao.AuditingTypeDAO">
 
     <!-- 基础类型resultMap -->
-    <resultMap id="BaseResultMap" type="AuditingType">
+<!--     <resultMap id="BaseResultMap" type="AuditingType">
         <id column="id" property="id"/>
         <result column="violationname" property="violationname" />
-    </resultMap>
-    
-    
-
+    </resultMap> -->
 </mapper>

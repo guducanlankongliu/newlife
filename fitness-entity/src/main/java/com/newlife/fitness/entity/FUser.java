@@ -17,11 +17,11 @@ public class FUser implements Serializable {
 
 	private int id;
 
-	private String fAddress;
+	private String f_address;
 
 	private int fAge;
 
-	private String fEmail;
+	private String f_email;
 
 	private String f_imgUrl;
 
@@ -31,9 +31,36 @@ public class FUser implements Serializable {
 
 	private String fPassword;
 
-	private String fPhone;
+	private String f_phone;
 
-	private String fSex;
+	
+
+	public int getfAge() {
+		return fAge;
+	}
+
+	public void setfAge(int fAge) {
+		this.fAge = fAge;
+	}
+
+	
+	public String getfPassword() {
+		return fPassword;
+	}
+
+	public void setfPassword(String fPassword) {
+		this.fPassword = fPassword;
+	}
+
+	
+
+	
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	private String f_sex;
 
 	private String f_userName;
 
@@ -61,13 +88,7 @@ public class FUser implements Serializable {
 		this.id = id;
 	}
 
-	public String getFAddress() {
-		return this.fAddress;
-	}
-
-	public void setFAddress(String fAddress) {
-		this.fAddress = fAddress;
-	}
+	
 
 	public int getFAge() {
 		return this.fAge;
@@ -77,13 +98,7 @@ public class FUser implements Serializable {
 		this.fAge = fAge;
 	}
 
-	public String getFEmail() {
-		return this.fEmail;
-	}
-
-	public void setFEmail(String fEmail) {
-		this.fEmail = fEmail;
-	}
+	
 
 	public String getF_imgUrl() {
 		return this.f_imgUrl;
@@ -117,20 +132,39 @@ public class FUser implements Serializable {
 		this.fPassword = fPassword;
 	}
 
-	public String getFPhone() {
-		return this.fPhone;
+	
+
+	
+	public String getF_address() {
+		return f_address;
 	}
 
-	public void setFPhone(String fPhone) {
-		this.fPhone = fPhone;
+	public void setF_address(String f_address) {
+		this.f_address = f_address;
 	}
 
-	public String getFSex() {
-		return this.fSex;
+	public String getF_email() {
+		return f_email;
 	}
 
-	public void setFSex(String fSex) {
-		this.fSex = fSex;
+	public void setF_email(String f_email) {
+		this.f_email = f_email;
+	}
+
+	public String getF_phone() {
+		return f_phone;
+	}
+
+	public void setF_phone(String f_phone) {
+		this.f_phone = f_phone;
+	}
+
+	public String getF_sex() {
+		return f_sex;
+	}
+
+	public void setF_sex(String f_sex) {
+		this.f_sex = f_sex;
 	}
 
 	public String getF_userName() {

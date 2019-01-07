@@ -22,6 +22,14 @@ public class Forum implements Serializable {
 	private Date postingTime;
 
 	private String title;
+     private String content_img;
+	public String getContent_img() {
+		return content_img;
+	}
+
+	public void setContent_img(String content_img) {
+		this.content_img = content_img;
+	}
 
 	private List<Comments> comments;
 

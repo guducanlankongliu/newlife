@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.newlife.fitness.frontend.dao.DUserDAO">
-  <!-- 后台用户基本的resultMap -->
-  <resultMap id="BaseResultMap" type="DUser">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="d_userName" jdbcType="VARCHAR" property="dUsername" />
-    <result column="d_loginName" jdbcType="VARCHAR" property="dLoginname" />
-    <result column="d_passWord" jdbcType="VARCHAR" property="dPassword" />
-    <result column="d_sex" jdbcType="CHAR" property="dSex" />
-    <result column="d_email" jdbcType="VARCHAR" property="dEmail" />
-    <result column="d_phone" jdbcType="CHAR" property="dPhone" />
-    <result column="d_imgUrl" jdbcType="VARCHAR" property="dImgurl" />
-  </resultMap>
+
   
  
 </mapper>

@@ -17,12 +17,7 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
-		<!-- junit -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 
 		<!-- Spring-web -->
 		<dependency>
